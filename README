@@ -1,0 +1,6 @@
+Script for a mini typer that emmulates keystrokes
+This is to get around sites that dont let you paste in your password from a password keychain
+
+
+Allow scripts to run on your machine
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
