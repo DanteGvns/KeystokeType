@@ -23,71 +23,61 @@
 
         private void InitializeComponent()
         {
-            this.FirstTextBox = new System.Windows.Forms.TextBox();
-            this.SecondTextBox = new System.Windows.Forms.TextBox();
-            this.SecondTextBox.UseSystemPasswordChar = true;
-            this.buttonSubmit = new System.Windows.Forms.Button();
-            this.CheckBoxShowPass = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            FirstTextBox = new TextBox();
+            SecondTextBox = new TextBox();
+            buttonSubmit = new Button();
+            CheckBoxShowPass = new CheckBox();
+            SuspendLayout();
             // 
             // FirstTextBox
             // 
-            this.FirstTextBox.Location = new System.Drawing.Point(12, 12);
-            this.FirstTextBox.Name = "FirstTextBox";
-            this.FirstTextBox.Size = new System.Drawing.Size(360, 23);
-            this.FirstTextBox.TabIndex = 0;
+            FirstTextBox.Location = new Point(12, 12);
+            FirstTextBox.Name = "FirstTextBox";
+            FirstTextBox.Size = new Size(360, 23);
+            FirstTextBox.TabIndex = 0;
             // 
             // SecondTextBox
             // 
-            this.SecondTextBox.Location = new System.Drawing.Point(12, 41);
-            this.SecondTextBox.Name = "SecondTextBox";
-            this.SecondTextBox.Size = new System.Drawing.Size(360, 23);
-            this.SecondTextBox.TabIndex = 1;
+            SecondTextBox.Location = new Point(12, 41);
+            SecondTextBox.Name = "SecondTextBox";
+            SecondTextBox.Size = new Size(360, 23);
+            SecondTextBox.TabIndex = 1;
+            SecondTextBox.UseSystemPasswordChar = true;
             // 
             // buttonSubmit
             // 
-            this.buttonSubmit.Location = new System.Drawing.Point(12, 70);
-            this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(100, 30);
-            this.buttonSubmit.TabIndex = 2;
-            this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
-            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            buttonSubmit.Location = new Point(12, 70);
+            buttonSubmit.Name = "buttonSubmit";
+            buttonSubmit.Size = new Size(100, 30);
+            buttonSubmit.TabIndex = 2;
+            buttonSubmit.Text = "Submit";
+            buttonSubmit.UseVisualStyleBackColor = true;
+            buttonSubmit.Click += buttonSubmit_Click;
             // 
             // CheckBoxShowPass
             // 
-            this.CheckBoxShowPass.Location = new System.Drawing.Point(225, 70);
-            this.CheckBoxShowPass.Name = "CheckBoxShowPass";
-            this.CheckBoxShowPass.Size = new System.Drawing.Size(120, 30);
-            this.CheckBoxShowPass.TabIndex = 3;
-            this.CheckBoxShowPass.Text = "Show Password";
-            this.CheckBoxShowPass.UseVisualStyleBackColor = true;
-            this.CheckBoxShowPass.CheckedChanged += new System.EventHandler(this.CheckBoxShowPass_CheckedChanged);
+            CheckBoxShowPass.Location = new Point(225, 70);
+            CheckBoxShowPass.Name = "CheckBoxShowPass";
+            CheckBoxShowPass.Size = new Size(120, 30);
+            CheckBoxShowPass.TabIndex = 3;
+            CheckBoxShowPass.Text = "Show Password";
+            CheckBoxShowPass.UseVisualStyleBackColor = true;
+            CheckBoxShowPass.CheckedChanged += CheckBoxShowPass_CheckedChanged;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 101);
-            this.Controls.Add(this.buttonSubmit);
-            this.Controls.Add(this.CheckBoxShowPass);
-            this.buttonSubmit.Text = "Submit";
-            this.buttonSubmit.UseVisualStyleBackColor = true;
-            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 101);
-            this.Controls.Add(this.buttonSubmit);
-            this.Controls.Add(this.FirstTextBox);
-            this.Controls.Add(this.SecondTextBox);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mini Typer";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(384, 109);
+            Controls.Add(CheckBoxShowPass);
+            Controls.Add(buttonSubmit);
+            Controls.Add(FirstTextBox);
+            Controls.Add(SecondTextBox);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Mini Typer";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
