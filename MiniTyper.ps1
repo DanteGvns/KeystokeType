@@ -28,7 +28,7 @@ $button.Add_Click({
     $text = $textbox.Text
     if ($text -eq "") { return }
 
-    Start-Sleep -Seconds 5  # Delay so you can switch windows
+    Start-Sleep -Seconds 3  # Delay so you can switch windows
 
     [System.Windows.Forms.SendKeys]::SendWait($text)
 })
