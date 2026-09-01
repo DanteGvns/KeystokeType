@@ -48,5 +48,11 @@ namespace MiniTyper
             }
 
         }
+
+        private void CheckBoxShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            isPasswordVisible = CheckBoxShowPass.Checked;
+            SecondTextBox.UseSystemPasswordChar = !isPasswordVisible;
+        }
     }
 }

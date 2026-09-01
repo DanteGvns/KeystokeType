@@ -5,6 +5,9 @@
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.TextBox FirstTextBox;
         private System.Windows.Forms.TextBox SecondTextBox;
+        private System.Windows.Forms.CheckBox CheckBoxShowPass;
+        private bool isPasswordVisible = false;
+
         private System.Windows.Forms.Button buttonSubmit;
 
         protected override void Dispose(bool disposing)
@@ -22,7 +25,9 @@
         {
             this.FirstTextBox = new System.Windows.Forms.TextBox();
             this.SecondTextBox = new System.Windows.Forms.TextBox();
+            this.SecondTextBox.UseSystemPasswordChar = true;
             this.buttonSubmit = new System.Windows.Forms.Button();
+            this.CheckBoxShowPass = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // FirstTextBox
@@ -49,6 +54,27 @@
             this.buttonSubmit.UseVisualStyleBackColor = true;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
+            // CheckBoxShowPass
+            // 
+            this.CheckBoxShowPass.Location = new System.Drawing.Point(225, 70);
+            this.CheckBoxShowPass.Name = "CheckBoxShowPass";
+            this.CheckBoxShowPass.Size = new System.Drawing.Size(120, 30);
+            this.CheckBoxShowPass.TabIndex = 3;
+            this.CheckBoxShowPass.Text = "Show Password";
+            this.CheckBoxShowPass.UseVisualStyleBackColor = true;
+            this.CheckBoxShowPass.CheckedChanged += new System.EventHandler(this.CheckBoxShowPass_CheckedChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(384, 101);
+            this.Controls.Add(this.buttonSubmit);
+            this.Controls.Add(this.CheckBoxShowPass);
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -65,6 +91,7 @@
         }
 
         #endregion
+
     }
 }
 
