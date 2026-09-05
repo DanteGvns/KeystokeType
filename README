@@ -4,3 +4,11 @@ This is to get around sites that dont let you paste in your password from a pass
 
 Allow scripts to run on your machine
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+
+
+For python version
+Activate env
+.\.venv\Scripts\Activate.ps1
+run script
+python pyMiniTyper/MiniTyper.py
