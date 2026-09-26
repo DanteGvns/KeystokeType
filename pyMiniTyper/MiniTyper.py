@@ -43,7 +43,7 @@ bottomRow.pack(pady=(5, 5))
 submitBtn = tk.Button(bottomRow, text="Submit", command=submit)
 submitBtn.pack(side="left", padx=(0,135))
 
-showPass = tk.BooleanVar
+showPass = tk.BooleanVar()
 showPassBox = tk.Checkbutton(bottomRow, text="Show Password", variable=showPass, command=toggleShowPass)
 showPassBox.pack(side="left")
 
